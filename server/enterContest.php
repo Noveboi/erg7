@@ -17,7 +17,7 @@ echo "Connection successful";
 //Dummy variable
 $dob = "2003-05-07";
 
-//For reviewid foreign key, make hidden input in form, and change it accordingly with JS.
+//For reviewid foreign key, make hidden input in form, and change it accordingly with JS (NVM use AJAX).
 
 $sql = "INSERT INTO contestants (reviewid, dob) VALUES
 		('changethis', '$dob')";
