@@ -1,1 +1,84 @@
-ECHO is on.
+body{
+	font-family: Arial, Helvetica, sans-serif; 
+	background-color: #001a00; 
+	margin: 90px 180px 110px 130px;
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	font-size: 23px;
+	display: block;
+	color: #e60000;
+}
+
+nav{
+	text-align: right;
+}
+
+nav a{
+	height: 100%;
+	font-size: 22px;
+	text-decoration: none;
+	color: #dbddd5;
+	background-color: #001a33;
+	padding: 0 5px 0 5px;
+}
+
+hr{
+	background-color: #004d00;
+	border: none;	
+	height: 5px;
+	width: 100%;
+}
+
+div img{
+	display: block;
+	margin: 0 auto;
+	border: 10px solid black;
+	border-radius: 40%;
+	width: 665px;
+	height: 430px;
+}
+
+section h2{
+	color: #ff4500;
+}
+
+section p{
+	text-align: left; 
+	color: gold; 
+	font-size: 17px;
+}
+
+ul{
+	list-style-type: square;
+	text-align: left; 
+	color: gold; 
+	font-size: 17px;
+}
+
+article h2{
+	color: #ff4500;
+}
+
+article picture img{
+	float: right; 
+	padding-left: 40px;
+	padding-bottom: 40px;
+	width: 200px; 
+	height: 200px;
+}
+
+article p{
+	text-align: left; 
+	color: gold; 
+	font-size: 17px;
+}
+
+footer{
+	text-align: center; 
+	background-color: black;
+	color: white; 
+	font-size: 15px;
+}
