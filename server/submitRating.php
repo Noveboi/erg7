@@ -45,6 +45,5 @@ if($conn->query($sql) === TRUE)
 	echo "Error creating row: " . $conn->error;
 }
 
-// header("Location: contest.html");
 // exit();
 ?>
