@@ -22,10 +22,28 @@ $uname = $_POST['username'];
 $reviewtext = $_POST['review'];
 $rating = $_POST['rating'];
 
+//Dummy values for debug (make sure to comment)
+// $discname = "Bopz Vol. 2";
+// $reldate = "2021-01-06";
+// $uname = "noveboi";
+// $reviewtext = "Bopz is very cool I really like it!";
+// $rating = 4;
+
 //DEBUG: Print POST values
 echo "<pre>";
 print_r($_POST);
 echo "</pre>";
+
+//SQL Query
+$sql = "INSERT INTO reviews (disc_name, reldate, uname, reviewtext, rating) VALUES
+		('$discname', '$reldate', '$uname', '$reviewtext', $rating)";
+
+if($conn->query($sql) === TRUE)
+{
+	echo "Review row created succesfully"; 
+} else{
+	echo "Error creating row: " . $conn->error;
+}
 
 // header("Location: contest.html");
 // exit();
