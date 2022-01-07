@@ -9,6 +9,15 @@
 
 /* Navbar Styling Start */
 
+	/* Animations */
+	@keyframes changeDS {
+		0% {filter: drop-shadow(0.17rem 0.3rem 0.2rem rgb(180, 8, 8));}
+		50% {filter: drop-shadow(0.17rem 0.3rem 0.37rem rgb(236, 46, 87));}
+		100% {filter: drop-shadow(0.17rem 0.3rem 0.2rem rgb(180, 8, 8));}
+	}
+	
+	/* /Animations */
+
 	/* Links */
 	#navbar > nav >a{
 		text-decoration: none;
@@ -73,7 +82,7 @@
 	}
 
 	#navbar > div >h1:hover{
-		filter: drop-shadow(0.17rem 0.3rem 0.4rem rgb(185, 39, 70));
+		animation: changeDS 2s ease-in infinite;
 	}
 	/* /Page Name */
 /* Navbar Styling End */
