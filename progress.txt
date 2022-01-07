@@ -1,9 +1,9 @@
 central.html -> Done
 cmpage.html -> Revamped, waiting for the gurl to make changes
 cmsonglist.html -> Needs styling and a little HTML formatting
-contest.html -> 0% complete
-leppage.html -> 0% complete
-rating.html -> 0% complete
+contest.html -> 0% complete priority 3
+leppage.html -> 0% complete priority 1
+rating.html -> 0% complete priority 2 
 
 -----------------------------------------------------------------------
 

@@ -33,12 +33,18 @@ h2{
 /* Text Effects */
 
 .bigify{
-	font-size: 1.5rem; 
+	font-size: 125%; 
 	font-weight: bold;
 }
 
 .brighten{
 	filter: brightness(125%);
+}
+
+.hugeletter{
+	font-size: 400%;
+	font-weight: bold;
+	font-family: 'Vollkorn', 'sans-serif';
 }
 
 /* End Text Effects */
