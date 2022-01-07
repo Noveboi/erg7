@@ -4,7 +4,7 @@ body{
 }
 
 #main{
-	padding: 30px;
+	padding: 30px 40px;
 	color: rgb(250, 186, 24);
 	display: flex;
 	flex-direction: column;
@@ -16,11 +16,18 @@ body{
 	border: 2px solid rgba(255, 0, 0, 0.6) ;
 }
 
+section, article{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
 h2{
 	text-decoration: underline;
 	font-size: 72px;
 	color: rgb(224, 25, 25);
 	margin: 40px 0;
+	align-self: center;
 }
 
 /* Text Effects */
@@ -102,3 +109,4 @@ tr:nth-child(1){
 td:nth-child(1) > img{
 	margin-left: 10px;
 }
+
