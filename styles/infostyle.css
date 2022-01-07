@@ -110,3 +110,101 @@ td:nth-child(1) > img{
 	margin-left: 10px;
 }
 
+video{
+	border-radius: 10%;
+	border: 3px solid rgba(255, 0, 0, 0.6);
+}
+
+/* Exclusive to CM Page */
+.albumholder{
+	justify-content: space-evenly;
+	width: 75%;
+}
+
+.songlist{
+	justify-content: space-evenly;
+	height: 450px;
+	width: 400px;
+}
+
+.songlist > li{
+	margin-left: 40px;
+}
+
+li::marker{
+	font-weight: bold;
+	font-size: 105%;
+}
+
+div > em{
+	text-align: center;
+	height: 50px;
+	filter: brightness(105%) saturate(105%);
+	font-size: 135%;
+}
+
+.listfont{
+	font-size: 18px;
+}
+
+#section_a{
+	color:#c81b1b; 
+	background-color:#1a1a1a; 
+	border-right: 4px solid rgb(204, 16, 16);
+	border-left: 4px solid rgb(204, 16, 16);
+	border-bottom: 4px solid rgb(204, 16, 16);
+
+}
+#section_a > em{
+	border-top:2px solid #ff5757; 
+	border-bottom:1px solid #ff5757; 
+}
+
+#section_b{
+	background-color: gainsboro;
+	border-right: 4px solid rgb(204, 16, 16);
+	border-left: 4px solid rgb(204, 16, 16);
+	border-bottom: 4px solid rgb(204, 16, 16);
+}
+#section_b > em{
+	color:#cc0000; 
+	border-top:2px solid #ff5757;
+	border-bottom:1px solid #ff5757;
+}
+#section_b > ol{
+	color:rgb(85, 85, 85); 
+}
+#section_b > ol > li > a{
+	color: rgb(236, 45, 45);
+}
+
+#section_c{
+	background-color: #f2b90d;
+	border-right: 4px solid #075f7c; 
+	border-left: 4px solid #075f7c; 
+	border-bottom: 4px solid #075f7c; 
+	color:#e65c00;
+}
+#section_c > em{
+	color:#086f91; 
+	border-top:2px solid #2089ac;
+	border-bottom:1px solid #2089ac;
+}
+#section_c > ol > li > a{
+	color: #159dca;
+}
+
+#section_d{
+	border-right: 4px solid #075f7c; 
+	border-left: 4px solid #075f7c; 
+	border-bottom: 4px solid #075f7c;
+	color:#f2c40d; 
+	background-color:#618a0f;
+}
+#section_d > em{
+	border-top:2px solid #2089ac;
+	border-bottom:1px solid #0b5974;
+	background-color: rgba(1,1,1,0.15);
+	color:#fd6a45; 
+}
+/* End Exclusive to CM Page */

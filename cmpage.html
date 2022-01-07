@@ -7,259 +7,266 @@
 	<title>City Morgue</title>
 	<link rel="icon" href="./cm_info_site/logo.jpg" type="image/jpg" sizes="10x10">
 	<link rel="stylesheet" href="./styles/infostyle.css">
+	<link rel="stylesheet" href="./styles/generalstyle.css">
 </head>
 <body>
-	<!-- Replace lines 13 - 23 with new navbar form central.html -->
-	<header>
-		<h1>City Morgue</h1>
-	</header>
-	
-	<!-- Navbar -->
-	<nav>
-		<a href="#generalinfo">Overview</a> |
-		<a href="music.html">Music</a> |
-		<a href="tour.html">Tour</a> |
-		<a href="contact.html">Contact</a>
-	</nav><br><br><br>
-	
-	<hr><br><br><br>
-	
-	<div>
-		<img src="./cm_info_site/citymorgue1.jpg" alt="A photoshopped picture of City Morgue">
-	</div><br><br><br>
-	
-	<section>
-		<div id="generalinfo">
-			<h2><ins>General</ins></h2><br>
+	<!-- Shared Navbar -->
+	<div id="navbar">
+		<div>
+			<h1>City Morgue</h1>
+		</div>
+		<nav>
+			<a href="central.html">Home</a> <hr>
+			<a href="music.html">Bands</a> <hr>
+			<a href="rating.html">Rate</a> <hr>
+			<a href="contest.html">Contest</a>
+		</nav> 
+	</div>
+	<!-- /Shared Navbar -->
+
+	<div id="main">
+		<img src="./cm_info_site/citymorgue1.jpg" class="bigimg" alt="A photoshopped picture of City Morgue">
+		
+		<!-- General -->
+		<section>
+			<h2>General</h2> 
 			<p>
-				&nbsp; <b>City Morgue</b> is a trap metal duo from New York City, USA. 
+				<span class="bigify">City Morgue</span> is a trap metal duo from New York City, USA. 
 				The band consists of three members: 
 				<ul>
-					<li>Junius 'ZillaKami' Rogers, from Bay Shore</li>
-					<li>Vinicius 'SosMula' Sosa, from São Paulo and</li>
-					<li>their producer Sami 'THRAXX' Nehari.</li>
+					<li><span class="brighten"> Junius 'ZillaKami' Rogers</span>, from Bay Shore</li>
+					<li><span class="brighten">Vinicius 'SosMula' Sosa</span>, from São Paulo</li>
+					<li>Producer <span class="brighten">Sami 'THRAXX' Nehari</span>.</li>
 				</ul>
-				<div style="color:gold; font-size:17px;">
-					&nbsp; Their debut tape <em>Vol.1: Hell Or High Water</em> released on October 12,2018.
-				</div>
+				<span class="brighten">Their debut tape <em>Vol. 1: Hell Or High Water</em> released on October 12, 2018.</span> 
 			</p>
+		</section>     
+
+		<!-- History -->
+		<article>
+			<h2><ins>History</ins></h2>
+			<div id="hist">
+				<p>
+					&nbsp; &nbsp; Growing up in Harlem, Sos took a lot of inspiration from the underground rap scene, listening to artists such as Eminem. 
+					Later on he met Peter 'Righteous P' Rogers, the co-founder of <strong>Hikari-Ultra</strong>, whose little brother was known as ZillaKami.
+					Born and raised in Bay Shore, Long Island, Zilla was heavily involved in the Hardcore punk movement in his teens, 
+					but after being put onto the songs of DMX and Onyx and the Beastie Boys, he started mixing rap and metal sounds together. 
+					&nbsp; &nbsp; Eventually, ZillaKami and SosMula formed their band in <del>2017</del> and working with THRAXX, they dropped songs like "Yukk Mouth", "HOCKEY PUKK", "SHINNERS13" and "Drop Dead" on Soundcloud.
+				</p>
+				<picture>
+					<source media="(min-width: 800px)" srcset="./cm_info_site/zilla.jpg" width="200px" height="200px">
+					<source media="(max-width: 500px)" srcset="./cm_info_site/sosmula.jpg" width="200px" height="200px">
+					<img title="The duo" src="./cm_info_site/zilla.jpg" alt="Alternative picture">
+				</picture>&nbsp;
+			</div>
+		</article>     
+
+		<a href="https://www.youtube.com/watch?v=SaC5oqLAjPc" target="_self" class="container flexalign">
+			<img src="./cm_info_site/interview.jpg" alt="City Morgue in the middle of an interview" class="bigimg" style="
+			width: 75%; height: 75%;">
+		</a>
+
+		<!-- Music -->
+		<section>
+			<h2>Music</h2> 
+			<p>
+				&nbsp; &nbsp; &nbsp; The group's music has been categorised as punk rap, trap metal, hardcore rap, and nu metal. 
+				In fact, most City Morgue's songs contain elements of extreme metal and shock rock. 
+				Their biggest influences are Slipknot, Behemoth, Radiohead, DMX, Onyx, Beastie Boys, Eminem and Tyler, the Creator.  
+				<br><br>
+				&nbsp; Make sure to check out their <a href="http://www.citymorgueofficial.com/" target="_blank">official website</a> for more content
+				and their merch! ;Ρ    
+				
+				<div class="container flexalign tbmargin flexcolumn">
+					<video title="NOT WORTH IT music video" width="400" height="350" controls>
+						<source src="./cm_info_site/notworthit.mp4" type="video/mp4">
+						Your browser doesn't support the video tag.
+					</video>   
+				
+					<iframe src="https://open.spotify.com/embed/track/6FedDqs2oWhq77ju6CzYqC?utm_source=generator" width="100%" height="380" frameBorder="0" 
+					allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="tbmargin"></iframe>
+
+					<audio title="G BLANCO($not ft.ZillaKami) audio" controls>
+						<source src="./cm_info_site/gblanco.mp3" type="audio/mpeg">
+						Your browser doesn't support the audio tag.
+					</audio>  
+				</div>  
+			</p>
+		</section>     
+
+		<!-- Discography -->
+		<article style="width: 80%;" class="container flexcolumn">
+			<h2><ins>Discography</ins></h2>  
+			<table>
+				<caption>Albums</caption>
+				<tr> 
+					<th>Title</th> 
+					<th>Label</th>
+					<th>Year</th>
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/1stalbum.jpg" width="40px" height="40px" alt="1st album">&nbsp; <a href="#section_a">City Morgue Vol.1: Hell or High Water</a></td>
+					<td>Republic Records</td>
+					<td>2018</td>
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/2ndalbum.jpg" width="40px" height="40px" alt="2nd album">&nbsp; <a href="#section_b">City Morgue Vol.2: As Good as Dead</a></td>
+					<td>Republic Records</td>
+					<td>2019</td>
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/3rdalbum.jpg" width="40px" height="40px" alt="3rd album">&nbsp; <a href="#section_c">City Morgue: Toxic Boogaloo</a></td>
+					<td>Republic Records</td>
+					<td>2020</td>
+				</tr>
+				<tr> 
+					<td><img src="./cm_info_site/4thalbum.jpg" width="40px" height="40px" alt="4th album">&nbsp; <a href="#section_d">City Morgue Vol.3: Bottom of the Barrel</a></td>
+					<td>Republic Records</td>
+					<td>2021</td>
+				</tr>
+			</table>  
+
+			<table>
+				<caption>EPs & Singles</caption>
+				<tr> 
+					<th>Title</th> 
+					<th>Label</th>
+					<th>Release Date</th>
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/1st.jpg" width="40px" height="40px" alt="1st EP/single">&nbsp; SHINNERS13</td>
+					<td>Hikari-Ultra/Republic Records</td>
+					<td>March 23,2018</td> 
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/2nd.jpg" width="40px" height="40px" alt="2nd EP/single">&nbsp; 33rd Blakk Glass</td>
+					<td>Hikari-Ultra/Republic Records</td>
+					<td>March 23,2018</td> 
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/3rd.jpg" width="40px" height="40px" alt="3rd EP/single">&nbsp; Sk8 Head</td>
+					<td>Hikari-Ultra/Republic Records</td>
+					<td>May 11,2018</td>
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/4th.jpg" width="40px" height="40px" alt="4th EP/single">&nbsp; 66SLAVS</td>
+					<td>Republic Records</td>
+					<td>June 7,2019</td>
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/5th.jpg" width="40px" height="40px" alt="5th EP/single">&nbsp; DAWG</td>
+					<td>Republic Records</td>
+					<td>July 19,2019</td>
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/6th.jpg" width="40px" height="40px" alt="6th EP/single">&nbsp; THE BALLOONS</td>
+					<td>Republic Records</td>
+					<td>December 6,2019</td>
+				</tr>
+				<tr>
+					<td><img src="./cm_info_site/7th.jpg" width="40px" height="40px" alt="7th EP/single">&nbsp; HURTWORLD '99</td>
+					<td>Republic Records</td>
+					<td>July 17,2020</td> 
+				</tr>
+				<tr> 
+					<td><img src="./cm_info_site/8th.jpg" width="40px" height="40px" alt="8th EP/single">&nbsp; WHAT'S MY NAME</td>
+					<td>Republic Records</td>
+					<td>October 15,2021</td>
+				</tr>
+			</table>
+		</article>
+
+		<!-- Albums In-Depth -->
+		<div class="container tbmargin albumholder">
+			<div id="section_a" class="flexcolumn container">
+				<em class="container flexalign  ">
+					<b>Hell or High Water</b>
+				</em>
+				<ol type="i" start="14" reversed class="container flexcolumn songlist listfont">
+					<li>Sk8 Head</li>
+					<li>33rd Blakk Glass</li>
+					<li>SHINNERS13</li>
+					<li>Aw Shit by ZillaKami</li>
+					<li>Downer</li>
+					<li>Snow On Tha Bluff</li>
+					<li>So What</li>
+					<li>PTSD</li>
+					<li>Nuka Cola</li>
+					<li>Lamborghini Getaway</li>
+					<li>Gravehop187 (Ft. Sickboyrari)</li>
+					<li>KenPark by SosMula (Ft. Sickboyrari)</li>
+					<li>Arson</li>
+					<li>
+						<a href="cmsonglist.html#a" target="iframe_a">Caligula</a>
+					</li>
+				</ol>
+			</div>	
+			<div id="section_b" class="  flexcolumn container">
+				<em class="container flexalign  "><b>As Good as Dead</b></em>
+				<ol type="1" class="container flexcolumn songlist listfont">
+					<li>NECK BRACE</li>
+					<li>INFERIOR</li>
+					<li><a href="cmsonglist.html#b" target="iframe_a">DRAINO (Ft. Denzel Curry)</a></li>
+					<li>THE GIVE UP</li>
+					<li>THRESH</li>
+					<li>SPLINTER</li>
+					<li>MINIMIZYA by ZillaKami (Ft. IDK)</li>
+					<li>THE BALLOONS</li>
+					<li>SOUL BURN by SosMula</li>
+					<li>16 TOES by ZillaKami</li>
+					<li>WOAH by SosMula</li>
+					<li>DIRTNAP</li>
+					<li>C4</li>
+					<li>BABYWIPES</li>
+					<li>MOUTHGUARD</li>
+					<li>SCREAMING AT THE RAIN</li>
+					<li>PEELING SCABS</li>
+				</ol>
+			</div>	
+		</div> 
+		<div class="container tbmargin albumholder">
+			<div id="section_c" class="flexcolumn container">
+				<em class="container flexalign"><b>Toxic Boogaloo</b></em>
+				<ol type="A" start="10" reversed class="container flexcolumn songlist listfont">
+					<li>PROSTHETIC LEGS</li>
+					<li>SUPER SOAKA by SosMula</li>
+					<li>ALL KILLER NO FILLER</li>
+					<li>YOU CAN SMD by ZillaKami</li>
+					<li>CRANK</li>
+					<li>YAKUZA by SosMula</li>
+					<li>BUAKAW</li>
+					<li>YELLOW PISS by ZillaKami</li>
+					<li>HURTWORLD '99</li>
+					<li><a href="cmsonglist.html#c" target="iframe_a">THE ELECTRIC EXPERIENCE</a></li>
+				</ol>
+			</div>	
+			<div id="section_d" class="flexcolumn container">
+				<em class="container flexalign"><b>Bottom of the Barrel</b></em>
+				<ol type="a" class="container flexcolumn songlist listfont">
+					<li>DEATH CULT INTRO</li>
+					<li>CABIN IN THE WOODS (Ft. Jasiah)</li>
+					<li>CONSCIENCE</li>
+					<li>MAKE IT DISAPPEAR</li>
+					<li>WHAT'S MY NAME</li>
+					<li>EVERYTHING IS BROKEN</li>
+					<li>OHDEE by SosMula</li>
+					<li>FLAP LIPS by ZillaKami</li>
+					<li><a href="cmsonglist.html#d" target="iframe_a">HOT SHELLS</a></li>
+					<li>MOTHER LOVER</li>
+					<li>XMAS BALLA</li>
+					<li>OUTER SPACE by SosMula</li>
+					<li>MUTT B by ZillaKami</li>
+				</ol>
+		   	</div>			
 		</div>
-	</section><br><br><br><br><br>
-	
-	<article>
-		<h2><ins>History</ins></h2>
-		<picture>
-			<source media="(min-width: 800px)" srcset="./cm_info_site/zilla.jpg" width="200px" height="200px">
-			<source media="(max-width: 500px)" srcset="./cm_info_site/sosmula.jpg" width="200px" height="200px">
-			<img title="The duo" src="./cm_info_site/zilla.jpg" alt="Alternative picture">
-		</picture>&nbsp;
 
-		<p>
-			&nbsp; &nbsp; Growing up in Harlem, Sos took a lot of inspiration from the underground rap scene, listening to artists such as Eminem. 
-			Later on he met Peter 'Righteous P' Rogers, the co-founder of <strong>Hikari-Ultra</strong>, whose little brother was known as ZillaKami.
-			Born and raised in Bay Shore, Long Island, Zilla was heavily involved in the Hardcore punk movement in his teens, 
-			but after being put onto the songs of DMX and Onyx and the Beastie Boys, he started mixing rap and metal sounds together.<br>
-			&nbsp; &nbsp; Eventually, ZillaKami and SosMula formed their band in <del>2017</del> and working with THRAXX, they dropped songs like "Yukk Mouth", "HOCKEY PUKK", "SHINNERS13" and "Drop Dead" on Soundcloud.
-		</p>
-	</article><br><br><br><br><br>
+		<iframe src="cmsonglist.html" name="iframe_a" width="100%" height="500px" >
+			<p>Your browser doesn't support iFrames.</p>
+		</iframe>                    
 
-	<hr style="background-color:#004d00; border:none; height:5px; width:100%;"><br><br><br>
-		
-	<div>
-		<a href="https://www.youtube.com/watch?v=SaC5oqLAjPc" target="_self"><img src="./cm_info_site/interview.jpg" alt="City Morgue in the middle of an interview"></a>
-	</div><br><br><br><br>
-	
-	<section>
-		<h2><ins>Music</ins></h2><br>
-		<p>
-			&nbsp; &nbsp; &nbsp; The group's music has been categorised as punk rap, trap metal, hardcore rap, and nu metal. 
-			In fact, most City Morgue's songs contain elements of extreme metal and shock rock. 
-			Their biggest influences are Slipknot, Behemoth, Radiohead, DMX, Onyx, Beastie Boys, Eminem and Tyler, the Creator.<br><br>
-			
-			&nbsp; Make sure to check out their <a href="http://www.citymorgueofficial.com/" target="_blank">official website</a> for more content
-			and their merch! ;Ρ<br><br><br><br>
-			
-			<video title="NOT WORTH IT music video" width="400" height="350" controls>
-				<source src="./cm_info_site/notworthit.mp4" type="video/mp4">
-				Your browser doesn't support the video tag.
-			</video><br><br><br><br><br>
-			<iframe src="https://open.spotify.com/embed/track/6FedDqs2oWhq77ju6CzYqC?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-			<br><br><br><br><br>
-			<audio title="G BLANCO($not ft.ZillaKami) audio" controls>
-				<source src="./cm_info_site/gblanco.mp3" type="audio/mpeg">
-				Your browser doesn't support the audio tag.
-			</audio><br><br>
-		</p>
-	</section><br><br><br><br><br>
-	
-	<article>
-		<h2><ins>Discography</ins></h2><br><br>
-		<table>
-			<caption><i>Albums</i></caption>
-			<tr> 
-				<th>Title</th> 
-				<th>Label</th>
-				<th>Year</th>
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/1stalbum.jpg" width="40px" height="40px" alt="1st album">&nbsp; <a href="#section_a">City Morgue Vol.1: Hell or High Water</a></td>
-				<td>Republic Records</td>
-				<td>2018</td>
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/2ndalbum.jpg" width="40px" height="40px" alt="2nd album">&nbsp; <a href="#section_b">City Morgue Vol.2: As Good as Dead</a></td>
-				<td>Republic Records</td>
-				<td>2019</td>
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/3rdalbum.jpg" width="40px" height="40px" alt="3rd album">&nbsp; <a href="#section_c">City Morgue: Toxic Boogaloo</a></td>
-				<td>Republic Records</td>
-				<td>2020</td>
-			</tr>
-			<tr> 
-				<td><img src="./cm_info_site/4thalbum.jpg" width="40px" height="40px" alt="4th album">&nbsp; <a href="#section_d">City Morgue Vol.3: Bottom of the Barrel</a></td>
-				<td>Republic Records</td>
-				<td>2021</td>
-			</tr>
-		</table><br><br>
-		
-		<table>
-			<tr>
-				<th colspan="3"><i>EPs &amp; Singles</i></th>
-			</tr>
-			<tr> 
-				<th>Title</th> 
-				<th>Label</th>
-				<th>Release Date</th>
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/1st.jpg" width="40px" height="40px" alt="1st EP/single">&nbsp; SHINNERS13</td>
-				<td>Hikari-Ultra/Republic Records</td>
-				<td>March 23,2018</td> 
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/2nd.jpg" width="40px" height="40px" alt="2nd EP/single">&nbsp; 33rd Blakk Glass</td>
-				<td>Hikari-Ultra/Republic Records</td>
-				<td>March 23,2018</td> 
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/3rd.jpg" width="40px" height="40px" alt="3rd EP/single">&nbsp; Sk8 Head</td>
-				<td>Hikari-Ultra/Republic Records</td>
-				<td>May 11,2018</td>
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/4th.jpg" width="40px" height="40px" alt="4th EP/single">&nbsp; 66SLAVS</td>
-				<td>Republic Records</td>
-				<td>June 7,2019</td>
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/5th.jpg" width="40px" height="40px" alt="5th EP/single">&nbsp; DAWG</td>
-				<td>Republic Records</td>
-				<td>July 19,2019</td>
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/6th.jpg" width="40px" height="40px" alt="6th EP/single">&nbsp; THE BALLOONS</td>
-				<td>Republic Records</td>
-				<td>December 6,2019</td>
-			</tr>
-			<tr>
-				<td><img src="./cm_info_site/7th.jpg" width="40px" height="40px" alt="7th EP/single">&nbsp; HURTWORLD '99</td>
-				<td>Republic Records</td>
-				<td>July 17,2020</td> 
-			</tr>
-			<tr> 
-				<td><img src="./cm_info_site/8th.jpg" width="40px" height="40px" alt="8th EP/single">&nbsp; WHAT'S MY NAME</td>
-				<td>Republic Records</td>
-				<td>October 15,2021</td>
-			</tr>
-		</table>
-	</article>
-	
-	<br><br><br><br><br><br><br><br><hr style="background-color:#002080; margin-left:0; border:1px solid #002080; height:5px; width:70%;">
-	<br><br><br><br><hr style="background-color:#002080; margin-right:0; border:1px solid #002080; height:5px; width:55%;">
-	<br><br><br><br><br><br><br><br>
-	
-	<p id="section_a" style="color:#cc0000; background-color:#1a1a1a; font-size:20px;">
-			<h3><em style="color:#cc0000; background-color:#1a1a1a; border:3px solid #d9d9d9; font-size:115%;"><b>Hell or High Water</b></em></h3>
-			<ol type="i" start="14" reversed style="color:#cc0000; background-color:#1a1a1a; font-size:18px;">
-				<li>Sk8 Head</li>
-				<li>33rd Blakk Glass</li>
-				<li>SHINNERS13</li>
-				<li>Aw Shit by ZillaKami</li>
-				<li>Downer</li>
-				<li>Snow On Tha Bluff</li>
-				<li>So What</li>
-				<li>PTSD</li>
-				<li>Nuka Cola</li>
-				<li>Lamborghini Getaway</li>
-				<li>Gravehop187 (Ft. Sickboyrari)</li>
-				<li>KenPark by SosMula (Ft. Sickboyrari)</li>
-				<li>Arson</li>
-				<li><a href="cmsonglist.html#a" target="iframe_a">Caligula</a></li>
-			</ol>
-	</p><br><br>
-	<p id="section_b" style="color:black; background-color:#d9d9d9; font-size:20px;">
-			<h3><em style="color:#cc0000; background-color:#d9d9d9; border:3px solid black; font-size:115%;"><b>As Good as Dead</b></em></h3>
-			<ol type="1" style="color:black; background-color:#d9d9d9; font-size:18px;">
-				<li>NECK BRACE</li>
-				<li>INFERIOR</li>
-				<li><a href="cmsonglist.html#b" target="iframe_a">DRAINO (Ft. Denzel Curry)</a></li>
-				<li>THE GIVE UP</li>
-				<li>THRESH</li>
-				<li>SPLINTER</li>
-				<li>MINIMIZYA by ZillaKami (Ft. IDK)</li>
-				<li>THE BALLOONS</li>
-				<li>SOUL BURN by SosMula</li>
-				<li>16 TOES by ZillaKami</li>
-				<li>WOAH by SosMula</li>
-				<li>DIRTNAP</li>
-				<li>C4</li>
-				<li>BABYWIPES</li>
-				<li>MOUTHGUARD</li>
-				<li>SCREAMING AT THE RAIN</li>
-				<li>PEELING SCABS</li>
-			</ol>
-	</p><br><br>
-	<p id="section_c" style="color:#e65c00; background-color:#f2b90d; font-size:20px;">
-			<h3><em style="color:#086f91; background-color:#f2b90d; border:3px solid #086f91; font-size:115%;"><b>Toxic Boogaloo</b></em></h3>
-			<ol type="A" start="10" reversed style="color:#e65c00; background-color:#f2b90d; font-size:18px;">
-				<li>PROSTHETIC LEGS</li>
-				<li>SUPER SOAKA by SosMula</li>
-				<li>ALL KILLER NO FILLER</li>
-				<li>YOU CAN SMD by ZillaKami</li>
-				<li>CRANK</li>
-				<li>YAKUZA by SosMula</li>
-				<li>BUAKAW</li>
-				<li>YELLOW PISS by ZillaKami</li>
-				<li>HURTWORLD '99</li>
-				<li><a href="cmsonglist.html#c" target="iframe_a">THE ELECTRIC EXPERIENCE</a></li>
-			</ol>
-	</p><br><br>
-	<p id="section_d" style="color:#f2c40d; background-color:#618a0f; font-size:20px;">
-			<h3><em style="color:#bf4040; background-color:#000000; font-size:115%;"><b>Bottom of the Barrel</b></em></h3>
-			<ol type="a" style="color:#f2c40d; background-color:#618a0f; font-size:18px;">
-				<li>DEATH CULT INTRO</li>
-				<li>CABIN IN THE WOODS (Ft. Jasiah)</li>
-				<li>CONSCIENCE</li>
-				<li>MAKE IT DISAPPEAR</li>
-				<li>WHAT'S MY NAME</li>
-				<li>EVERYTHING IS BROKEN</li>
-				<li>OHDEE by SosMula</li>
-				<li>FLAP LIPS by ZillaKami</li>
-				<li><a href="cmsonglist.html#d" target="iframe_a">HOT SHELLS</a></li>
-				<li>MOTHER LOVER</li>
-				<li>XMAS BALLA</li>
-				<li>OUTER SPACE by SosMula</li>
-				<li>MUTT B by ZillaKami</li>
-			</ol>
-	</p><br><br><br><br>
-	
-	<iframe src="cmsonglist.html" name="iframe_a" width="100%" height="500px" >
-		<p>Your browser doesn't support iFrames.</p>
-	</iframe><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-	<footer>
-		Copyright © 2021 Stavrina Karadima.
-	</footer><br>
+		<footer>
+			Copyright © 2021 Stavrina Karadima.
+		</footer> 
+	</div>
 </body>
 </html>
