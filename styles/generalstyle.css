@@ -1,5 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Titillium+Web:wght@400;900&display=swap');
+
 *{
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', 'Sans Serif';
 }
+
+/* Navbar Styling Start */
+
+	/* Links */
+	#navbar > nav >a{
+		text-decoration: none;
+		color: rgb(255, 219, 161);
+		font-size: 30px;
+		width: auto;
+	}
+
+	#navbar > nav >a:hover{
+		filter: saturate(600%);
+	}
+	/* /Links */
+
+	#navbar{
+		height: 200px;
+		padding: 50px;
+		padding-left: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+		border-bottom: 2px solid rgb(109, 109, 109);
+		background: rgb(7, 25, 46);
+	}
+
+	/* Page Name */
+	#navbar > div{
+		flex-basis: 80%;
+	}
+
+	#navbar > div > h1{
+		filter: drop-shadow(0.17rem 0.3rem 0.2rem rgb(180, 8, 8));
+		font-size: 90px;
+		font-family: 'Titillium Web', 'Sans Serif';
+		font-weight: 900;
+		cursor: default;
+		user-select: none;
+		width: fit-content;
+		color: rgb(246, 43, 70);
+	}
+
+	#navbar > div >h1:hover{
+		filter: drop-shadow(0.17rem 0.3rem 0.4rem rgb(185, 39, 70));
+	}
+	/* /Page Name */
+
+	#navbar > nav{
+		width: 30%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#navbar > hr{
+		width: 100%;
+	}
+
+/* Navbar Styling End */
+
+/* General Purpose Classes */
+	.container{
+		display: flex;
+	}
+	.flexalign{
+		align-items: center;
+		justify-content: center;
+	}
+	.tbmargin{
+		margin: 20px 0px;
+	}
+	.flexcolumn{
+		flex-direction: column;
+	}
+/* End General Purpose Classes */
