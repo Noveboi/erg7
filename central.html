@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home page</title>
+	<title>Enjoy your stay!</title>
 	<link rel="stylesheet" href="./styles/generalstyle.css">
 </head>
 <body>
@@ -15,11 +15,16 @@
 		</div>
 		<nav>
 			<a href="central.html">Home</a> <hr>
-			<a href="music.html">Bands</a> <hr>
+			<div class="container flexcolumn" id="select">
+				<a href="cmpage.html" id="cm">City Morgue</a>
+				<a style="cursor: default;" onmouseenter="Split()" id="split-text">Bands</a>
+				<a href="leppage.html" id="lep">Leprous</a>
+			</div> <hr>
 			<a href="rating.html">Rate</a> <hr>
 			<a href="contest.html">Contest</a>
 		</nav> 
 	</div>
 	<!-- /Shared Navbar -->
+	<script src="./script/sharedScr.js"></script>
 </body>
 </html>

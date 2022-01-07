@@ -16,8 +16,17 @@
 		font-size: 30px;
 		width: auto;
 	}
+	#navbar > nav > div >a{
+		text-decoration: none;
+		color: rgb(255, 219, 161);
+		font-size: 30px;
+		width: auto;
+	}
 
 	#navbar > nav >a:hover{
+		filter: saturate(600%);
+	}
+	#navbar > nav > div >a:hover{
 		filter: saturate(600%);
 	}
 
@@ -25,11 +34,12 @@
 		width: 500px;
 		display: flex;
 		justify-content: space-evenly;
+		align-items: center;
 		margin-left: auto;
 	}
 
-	#navbar > hr{
-		width: 100%;
+	#navbar > nav > hr{
+		height: 50px;
 	}
 	/* /Links */
 
