@@ -13,7 +13,9 @@ body{
 
 .bigimg{ /* CM Page exclusive*/
 	border-radius: 20%;
-	border: 2px solid rgba(255, 0, 0, 0.6) ;
+	border: 2px solid rgba(255, 0, 0, 0.6);
+	margin-top: 40px;
+	margin-bottom: 10px;
 }
 
 section, article{
@@ -26,8 +28,12 @@ h2{
 	text-decoration: underline;
 	font-size: 72px;
 	color: rgb(224, 25, 25);
-	margin: 40px 0;
+	margin: 43.5px 0;
 	align-self: center;
+}
+
+h2 > #space{
+	margin-top: 37px;
 }
 
 /* Text Effects */
@@ -39,6 +45,15 @@ h2{
 
 .brighten{
 	filter: brightness(125%);
+}
+
+.dropcap{
+	float: left;
+    font-size: 290%;
+	font-weight: bold;
+    margin-top: 15px;
+    margin-right: 10px;
+    color: rgb(250, 186, 24);
 }
 
 .hugeletter{
@@ -57,8 +72,21 @@ p{
 	line-height: 1.4em;
 }
 
+mark{
+	background-color: black;
+	color: rgb(250, 186, 24);
+}
+
+video{
+	margin-top: 70px;
+	width: 600px; 
+	height: 350px;
+}
+
 ul{
-	margin-left: 40px;
+	margin-top: -6px;
+	margin-left: 75px;
+	margin-bottom: 10px;
 }
 
 #hist{ /* CM Page exclusive*/
@@ -86,7 +114,7 @@ table{
 }
 
 caption{
-	font-size: 60px;
+	font-size: 55px;
 	font-weight: bold;
 	color: rgb(251, 251, 251);
 }
@@ -117,8 +145,7 @@ td:nth-child(1) > img{
 }
 
 video{
-	border-radius: 10%;
-	border: 3px solid rgba(255, 0, 0, 0.6);
+	border: 3px solid black;
 }
 
 /* Exclusive to CM Page */
@@ -161,9 +188,10 @@ div > em{
 	border-bottom: 4px solid rgb(204, 16, 16);
 
 }
+
 #section_a > em{
-	border-top:2px solid #ff5757; 
-	border-bottom:1px solid #ff5757; 
+	border-top: 2px solid #ff5757; 
+	border-bottom: 1px solid #ff5757; 
 }
 
 #section_b{
@@ -172,14 +200,17 @@ div > em{
 	border-left: 4px solid rgb(204, 16, 16);
 	border-bottom: 4px solid rgb(204, 16, 16);
 }
+
 #section_b > em{
 	color:#cc0000; 
-	border-top:2px solid #ff5757;
-	border-bottom:1px solid #ff5757;
+	border-top: 2px solid #ff5757;
+	border-bottom: 1px solid #ff5757;
 }
+
 #section_b > ol{
 	color:rgb(85, 85, 85); 
 }
+
 #section_b > ol > li > a{
 	color: rgb(236, 45, 45);
 }
@@ -191,11 +222,13 @@ div > em{
 	border-bottom: 4px solid #075f7c; 
 	color:#e65c00;
 }
+
 #section_c > em{
 	color:#086f91; 
-	border-top:2px solid #2089ac;
-	border-bottom:1px solid #2089ac;
+	border-top: 2px solid #2089ac;
+	border-bottom: 1px solid #2089ac;
 }
+
 #section_c > ol > li > a{
 	color: #159dca;
 }
@@ -207,9 +240,10 @@ div > em{
 	color:#f2c40d; 
 	background-color:#618a0f;
 }
+
 #section_d > em{
-	border-top:2px solid #2089ac;
-	border-bottom:1px solid #0b5974;
+	border-top: 2px solid #2089ac;
+	border-bottom: 1px solid #0b5974;
 	background-color: rgba(1,1,1,0.15);
 	color:#fd6a45; 
 }
