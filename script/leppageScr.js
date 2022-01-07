@@ -2,6 +2,7 @@
 const belowBox = document.getElementById('below');
 const forcedBox = document.getElementById('forced');
 const rewindBox = document.getElementById('rewind');
+const memtext = document.getElementById('membertxt');
 
 const BELO = 1;
 const WITH = 2;
@@ -76,18 +77,6 @@ function adjustVolume(audio, e) {
 	}
 }
 
-function noScroll() {
-	//Get scroll pos
-	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-	scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-	//If scroll is attempted, reset pos
-	window.onscroll = function () {
-		window.scrollTo(Math.round(scrollLeft), Math.round(scrollTop));
-		console.log("noscroll triggered");
-	}
-}
-
 if (belowBox && forcedBox && rewindBox) {
 	//Click events
 	belowBox.addEventListener('click', function () {
@@ -106,21 +95,18 @@ if (belowBox && forcedBox && rewindBox) {
 	belowBox.addEventListener('wheel', function (e) {
 		if (audioIsPlaying) {
 			adjustVolume(belowAudio, e);
-			noScroll();
 		}
 	});
 
 	rewindBox.addEventListener('wheel', function (e) {
 		if (audioIsPlaying) {
 			adjustVolume(rewindAudio, e);
-			noScroll();
 		}
 	});
 
 	forcedBox.addEventListener('wheel', function (e) {
 		if (audioIsPlaying) {
 			adjustVolume(forcedAudio, e);
-			noScroll();
 		}
 	});
 
