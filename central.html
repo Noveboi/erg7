@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Enjoy your stay!</title>
 	<link rel="stylesheet" href="./styles/generalstyle.css">
+	<link rel="stylesheet" href="./styles/centralstyle.css">
 </head>
+
 <body>
 	<!-- Shared Navbar -->
 	<div id="navbar">
@@ -14,17 +17,38 @@
 			<h1>Welcome!</h1>
 		</div>
 		<nav>
-			<a href="central.html">Home</a> <hr>
+			<a href="central.html">Home</a>
+			<hr>
 			<div class="container flexcolumn" id="select">
 				<a href="cmpage.html" id="cm">City Morgue</a>
 				<a style="cursor: default;" onmouseenter="Split()" id="split-text">Bands</a>
 				<a href="leppage.html" id="lep">Leprous</a>
-			</div> <hr>
-			<a href="rating.html">Rate</a> <hr>
+			</div>
+			<hr>
+			<a href="rating.html">Rate</a>
+			<hr>
 			<a href="contest.html">Contest</a>
-		</nav> 
+		</nav>
 	</div>
 	<!-- /Shared Navbar -->
+	<div id="main" class="container flexalign" style="justify-content: space-evenly; height: 70vh;">
+		<div class="container flexalign bigbutton" id="cmbut">City Morgue</div>
+		<div class="container flexalign bigbutton" id="lepbut">Leprous</div>
+	</div>
 	<script src="./script/sharedScr.js"></script>
+	<script>
+		//Redirect on bigbutton click
+		cmbut = document.getElementById('cmbut');
+		lepbut = document.getElementById('lepbut');
+
+		cmbut.addEventListener('click', function(){
+			window.location.href = "cmpage.html";
+		});
+
+		lepbut.addEventListener('click', function(){
+			window.location.href = "leppage.html";
+		});
+	</script>
 </body>
+
 </html>

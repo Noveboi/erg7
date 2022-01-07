@@ -1,0 +1,38 @@
+body{
+	background: url(../img/bg1.png);
+}
+
+@keyframes changeColor{
+	from {background: rgb(7, 25, 46);}
+	to {background: rgb(87, 15, 57);}
+}
+
+@keyframes revertColor{
+	from {background: rgb(87, 15, 57);}
+
+	to {background: rgb(7, 25, 46);}
+}
+
+.bigbutton{
+	border: 5px solid whitesmoke;
+	width: 40vw;
+	height: 250px;
+	background: rgb(7, 25, 46);
+	color: rgb(255, 245, 211);
+	font-size: 5vw;
+}
+
+.bigbutton:hover{
+	cursor: pointer;
+	animation-name: changeColor;
+	animation-duration: 0.15s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+.bigbutton:not(:hover)
+{
+	animation-name: revertColor;
+	animation-duration: 0.15s;
+	animation-timing-function: ease-out;
+}
