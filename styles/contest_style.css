@@ -11,6 +11,7 @@
 label{
     color: rgb(255, 238, 144);
     font-size: 48px;
+    user-select: none;
 }
 
 form > *{
@@ -22,6 +23,12 @@ input[type="number"]{
     height: 60px;
     font-size: 36px;
     text-align: center;
+    background: rgb(34, 34, 34);
+    color: rgb(242, 242, 242);
+    border: 2px solid goldenrod;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 input[type="submit"]{
@@ -41,4 +48,8 @@ input[type="submit"]:hover{
 
 input[type="submit"]:not(:hover){
     animation: hideBorder 0.35s linear forwards;
+}
+
+#content{
+    margin-top: 80px;
 }

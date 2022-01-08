@@ -21,6 +21,7 @@ $reldate = $_POST['reldate'];
 $uname = $_POST['username'];
 $reviewtext = $_POST['review'];
 $rating = $_POST['rating'];
+$birthyear = $_POST['birthyear'];
 
 //Dummy values for debug (make sure to comment)
 // $discname = "Bopz Vol. 2";
@@ -28,6 +29,7 @@ $rating = $_POST['rating'];
 // $uname = "noveboi";
 // $reviewtext = "Bopz is very cool I really like it!";
 // $rating = 4;
+// $birthyear = 2003;
 
 //DEBUG: Print POST values
 echo "<pre>";
@@ -35,14 +37,14 @@ print_r($_POST);
 echo "</pre>";
 
 //SQL Query
-$sql = "INSERT INTO reviews (disc_name, reldate, uname, reviewtext, rating) VALUES
-		('$discname', '$reldate', '$uname', '$reviewtext', $rating)";
+$sql = "INSERT INTO reviews (disc_name, reldate, uname, reviewtext, rating, birthyear) VALUES
+		('$discname', '$reldate', '$uname', '$reviewtext', '$rating', '$birthyear')";
 
 if($conn->query($sql) === TRUE)
 {
 	echo "Review row created succesfully"; 
 } else{
-	echo "Error creating row: " . $conn->error;
+	echo $conn->error;
 }
 
 // exit();
