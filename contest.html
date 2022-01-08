@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contest</title>
 	<link rel="stylesheet" href="./styles/generalstyle.css">
+	<link rel="stylesheet" href="./styles/contest_style.css">
+	<link rel="stylesheet" href="./styles/centralstyle.css">
+	<script defer src="./script/sharedScr.js"></script>
 </head>
 <body>
 <!-- Shared Navbar -->
@@ -20,11 +23,19 @@
 			<a style="cursor: default;" onmouseenter="Split()" id="split-text">Bands</a>
 			<a href="leppage.html" id="lep">Leprous</a>
 		</div> <hr>
-		<a href="rating.html">Rate</a> <hr>
-		<a href="contest.html">Contest</a>
+		<a href="rating.html">Rate</a>
 	</nav> 
 </div>
 <!-- /Shared Navbar -->
-	<script src="./script/sharedScr.js"></script>
+
+<!-- Content -->
+<div id="content" class="container flexcolumn flexalign">
+	<h1>Answer this question and win prizes!</h1>
+	<form class="container flexcolumn flexalign">
+		<label for="byear">Enter your birth year:</label>
+		<input type="number" pattern="[0-9]{4,4}">
+		<input type="submit" value="Go!">
+	</form>
+</div>
 </body>
 </html>

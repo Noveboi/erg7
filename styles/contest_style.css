@@ -1,1 +1,44 @@
-ECHO is on.
+@keyframes showBorder{
+    from {border: 3px solid rgba(255, 0,0, 0);}
+    to {border: 3px solid rgba(218, 165, 32, 1);}
+}
+
+@keyframes hideBorder{
+    0% {border: 3px solid rgba(218, 165, 32, 1);}
+    100% {border: 3px solid rgba(255, 0,0, 0);}
+}
+
+label{
+    color: rgb(255, 238, 144);
+    font-size: 48px;
+}
+
+form > *{
+    margin-bottom: 20px;
+}
+
+input[type="number"]{
+    width: 15vw;
+    height: 60px;
+    font-size: 36px;
+    text-align: center;
+}
+
+input[type="submit"]{
+    width: 10vw;
+    margin-top: 100px;
+    height: 60px;
+    font-size: 32px;
+    background: rgb(22, 22, 22);
+    color: gainsboro;
+    cursor: pointer;
+    border: 3px solid rgba(255, 0, 0, 0);
+}
+
+input[type="submit"]:hover{
+    animation: showBorder 0.7s linear forwards;
+}
+
+input[type="submit"]:not(:hover){
+    animation: hideBorder 0.35s linear forwards;
+}
