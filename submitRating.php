@@ -11,8 +11,9 @@ $conn = new mysqli($hostname, $username, $password, $dbname);
 if($conn->connect_error)
 {
 	die("Connection failed: " . $conn->connect_error);
+} else {
+	echo "Connected epicly";
 }
-echo "Connection successful";
 
 //Get POSTed form data
 //(Βαλε τα corresponding names στα form inputs)
@@ -23,22 +24,11 @@ $reviewtext = $_POST['review'];
 $rating = $_POST['rating'];
 $birthyear = $_POST['birthyear'];
 
-//Dummy values for debug (make sure to comment)
-// $discname = "Bopz Vol. 2";
-// $reldate = "2021-01-06";
-// $uname = "noveboi";
-// $reviewtext = "Bopz is very cool I really like it!";
-// $rating = 4;
-// $birthyear = 2003;
-
-//DEBUG: Print POST values
-echo "<pre>";
-print_r($_POST);
-echo "</pre>";
-
-//SQL Query
+//SQL Queries
 $sql = "INSERT INTO reviews (disc_name, reldate, uname, reviewtext, rating, birthyear) VALUES
 		('$discname', '$reldate', '$uname', '$reviewtext', '$rating', '$birthyear')";
+
+$getdata = "SELECT uname, birthyear FROM reviews";
 
 if($conn->query($sql) === TRUE)
 {
@@ -47,5 +37,6 @@ if($conn->query($sql) === TRUE)
 	echo $conn->error;
 }
 
-// exit();
+header("Location: contest.html");
+exit();
 ?>
