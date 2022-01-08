@@ -79,6 +79,7 @@
 		user-select: none;
 		width: fit-content;
 		color: rgb(246, 43, 70);
+		margin-bottom: 0;
 	}
 
 	#navbar > div >h1:hover{
