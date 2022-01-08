@@ -1,5 +1,6 @@
 body{
 	background: url(../img/bg1.png);
+	height: 825px;
 }
 
 @keyframes changeColor{
@@ -42,4 +43,5 @@ h1{
 	font-size: 64px;
 	user-select: none;
 	color: whitesmoke;
+	margin-bottom: 50px;
 }

@@ -10,7 +10,9 @@ const FORC = 3;
 
 belowAudio = new Audio("../audio/below.mp3");
 rewindAudio = new Audio("../audio/fence.mp3");
-forcedAudio = new Audio("../audio/forced_entry.mp3");
+forcedAudio = new Audio("../forced_entry.mp3");
+
+console.log(belowAudio, rewindAudio);
 
 let audioIsPlaying = false;
 let vol = 1.0;
