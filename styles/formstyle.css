@@ -1,1 +1,39 @@
-ECHO is on.
+body{
+    font-size: 24.5px;
+    background-image: url('../rating/cmbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 130%;
+    background-position: left;
+}
+
+form{
+    padding: 30px 40px;
+	color: white;
+    background-color: rgba(0, 0, 0, .8);
+	border: 3px solid black;
+    width: 650pt;
+	margin: 0 auto;
+}
+
+form h1{
+	text-align: center; 
+	background-color: #0d0d0d;
+}
+
+.padding{
+	padding: 50px;
+}
+
+fieldset > legend{
+	font-size: 25px;
+}
+
+iframe{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.slightmargin{
+    margin-left: 30px;
+}
