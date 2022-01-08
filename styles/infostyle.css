@@ -32,8 +32,8 @@ h2{
 	align-self: center;
 }
 
-h2 > #space{
-	margin-top: 37px;
+.space{
+	margin-top: 40px;
 }
 
 /* Text Effects */
@@ -85,7 +85,7 @@ video{
 
 ul{
 	margin-top: -6px;
-	margin-left: 75px;
+	margin-left: 85px;
 	margin-bottom: 10px;
 }
 
@@ -95,6 +95,7 @@ ul{
 
 #hist > picture{
 	filter: drop-shadow(0 0 0.2rem rgba(218, 153, 32, 0.219));
+	margin-left: 27px;
 }
 
 a{

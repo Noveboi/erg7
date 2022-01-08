@@ -57,8 +57,8 @@ body{
 	height: 370px;
 }
 
-#main > #c > video{
-	margin-top: 30px;
+#main > #c > iframe{
+	margin-top: 49px;
 	width: 580px;
 	height: 370px;
 }
