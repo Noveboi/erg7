@@ -28,18 +28,18 @@
 	</div> <br><br><br>
 	<!-- /Shared Navbar -->
 
-	<form enctype="multipart/form-data" id="rateNew" method="post" action=""> <br>
+	<form enctype="multipart/form-data" id="rateNew" method="post" action="submitRating.php"> <br>
 		<h1><a href="https://open.spotify.com/album/06QKM7WJc1kybQdxhYNdep" target="_blank">City Morgue Vol.3</a> - Review</h1> <br>
 
 		<fieldset class="padding">
 			<legend></legend> <br>
 			
-			<label for="albumname" class="slightmargin"><ins>Album Name</ins>: &nbsp; &nbsp; &nbsp; </label>
-			<input required placeholder="CITY MORGUE VOLUME 3: ______ __ ___ ______" type="text" name="albumname" id="albumname" size="42" maxlength="42"> <br>
+			<label for="disc" class="slightmargin"><ins>Album Name</ins>: &nbsp; </label>
+			<input required placeholder="CITY MORGUE VOLUME 3: ______ __ ___ ______" type="text" name="disc" id="disc" size="42" maxlength="42" style="width:490px;"> <br>
 
 			<div class="margintop">
-				<label for="releasedate" class="slightmargin"><ins>Release Date</ins>: &nbsp; &nbsp; &nbsp; </label> 
-				<input required name="releasedate" type="date" id="releasedate"> 
+				<label for="reldate" class="slightmargin"><ins>Release Date</ins>: &nbsp; </label> 
+				<input required name="reldate" type="date" id="reldate"> 
 			</div>
 
 			<div class="margintop slightmargin">
@@ -50,19 +50,27 @@
 				<iframe src="https://open.spotify.com/embed/track/6MKIiSoBFmtTQ7G04d3hPW?utm_source=generator" width="60%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
 			</div>
 
-			<label for="username" class="slightmargin"><ins>Review by</ins>: &nbsp; &nbsp; &nbsp; </label>
+			<label for="username" class="slightmargin"><ins>Review by</ins>: &nbsp; </label>
 			<input required placeholder="(Your username)" type="text" name="username" id="username" size="15" maxlength="15"> <br>
 
-			<div class="container" id="review">
-				<label for="comments"><ins>Comments</ins>: &nbsp; &nbsp; &nbsp; </label> 
-				<textarea required placeholder="(Review text)" name="comments" id="comments"></textarea>
+			<div class="container" id="rev">
+				<label for="review"><ins>Comments</ins>: &nbsp; </label> 
+				<textarea required placeholder="(Review text)" name="review" id="review"></textarea>
 			</div> 
 			
-
+			<div class="margintop slightmargin">
+				<label for="btn"><em>Press this button to submit your answers</em>:</label> &nbsp; &nbsp;
+				<input type="button" id="btn2" value="Submit" style=" border:3px solid black; font-size:26px; font-weight:bold; color:black; background:rgba(173, 0, 0, 0.829);">
+			</div> 
 			
+			<div class="margintop slightmargin">
+				Click <a id="anchorr" href="contest.html">here</a> to participate in a prize-winning contest, where you could get a ticket to one of these bands' shows !
+			</div>
+
 			<br><br><br>
 		</fieldset>
 	</form> <br><br><br><br>
 	<script src="./script/sharedScr.js"></script>
+	<script defer src="./script/rating.js"></script>
 </body>
 </html>

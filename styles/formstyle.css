@@ -8,7 +8,7 @@ body{
 }
 
 form{
-    padding: 30px 40px;
+    padding: 30px 36px;
 	color: white;
     background-color: rgba(0, 0, 0, .8);
 	border: 3px solid black;
@@ -32,7 +32,7 @@ form > h1 > a:hover{
 }
 
 .padding{
-	padding: 50px;
+	padding: 46px;
     margin-top: 9.8px;
     margin-bottom: 24px;
 }
@@ -60,7 +60,7 @@ textarea{
     margin-left: 30px;
 }
 
-#review{
+#rev{
     align-items: center;
     margin: -20px 0 0 28px;
 }
@@ -81,4 +81,16 @@ textarea{
     font-size: 20px;
     border: 2px solid black;
     color: rgb(235, 235, 235);
+}
+
+#anchorr{
+    color: rgb(5, 50, 197);
+    background-color: rgb(14, 14, 14);
+    filter: drop-shadow(0 0 0.2rem rgba(218, 153, 32, 0.219));
+    text-decoration: none;
+}
+
+#anchorr:hover{
+	text-decoration: underline;
+    text-decoration-style: dotted;
 }
