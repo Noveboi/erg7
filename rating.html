@@ -25,43 +25,44 @@
 			<a href="rating.html">Rate</a> <hr>
 			<a href="contest.html">Contest</a>
 		</nav> 
-	</div>
+	</div> <br><br><br>
 	<!-- /Shared Navbar -->
 
-	<form enctype="multipart/form-data" id="rateNew" method="post" action=""> 
-		<h1>City Morgue Vol.3 - Review</h1>
+	<form enctype="multipart/form-data" id="rateNew" method="post" action=""> <br>
+		<h1><a href="https://open.spotify.com/album/06QKM7WJc1kybQdxhYNdep" target="_blank">City Morgue Vol.3</a> - Review</h1> <br>
 
 		<fieldset class="padding">
-			<legend><b>AAAA</b></legend>
+			<legend></legend> <br>
 			
 			<label for="albumname" class="slightmargin"><ins>Album Name</ins>: &nbsp; &nbsp; &nbsp; </label>
 			<input required placeholder="CITY MORGUE VOLUME 3: ______ __ ___ ______" type="text" name="albumname" id="albumname" size="42" maxlength="42"> <br>
 
-			<label for="releasedate" class="slightmargin"><ins>Release Date</ins>: &nbsp; &nbsp; &nbsp; </label> 
-			<input required name="releasedate" type="date" id="releasedate" > <br><br>
+			<div class="margintop">
+				<label for="releasedate" class="slightmargin"><ins>Release Date</ins>: &nbsp; &nbsp; &nbsp; </label> 
+				<input required name="releasedate" type="date" id="releasedate"> 
+			</div>
+
+			<div class="margintop slightmargin">
+				<ins>Rate this song</ins> (from the newest album):
+			</div>
 
 			<div class="container flexalign flexcolumn">
-				<iframe src="https://open.spotify.com/embed/track/6hcOvx4AIxL8bVE2o5vrI1?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br> 
-				<iframe src="https://open.spotify.com/embed/track/6MKIiSoBFmtTQ7G04d3hPW?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/2ywfLqOoAjcCBW7T1TSJC1?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/4d3i3WdYCaMkNyEAEHtKce?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/5X2QbYXZIsE4zffyKbelen?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/7oEASGVP65ppgRhT0kgQLS?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/198FJXHvfbTbUAuUfAP8vI?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/0C1WBelNyhh8ue1fvRWY9Z?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/79Ln7kg2a3KGwmbGxV7BXW?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/2ogbQBAyyyHYHSkcc80gDt?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/17bn48L9vIEqPNZQYXvxub?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/6UuZoeIwjDcvo8Jiluoxsh?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
-				<iframe src="https://open.spotify.com/embed/track/76uZUZQ3qcMoctaBQE78cT?utm_source=generator" width="60%" height="320" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br> 
+				<iframe src="https://open.spotify.com/embed/track/6MKIiSoBFmtTQ7G04d3hPW?utm_source=generator" width="60%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> <br>
 			</div>
+
 			<label for="username" class="slightmargin"><ins>Review by</ins>: &nbsp; &nbsp; &nbsp; </label>
 			<input required placeholder="(Your username)" type="text" name="username" id="username" size="15" maxlength="15"> <br>
 
-			<label for="comments" class="slightmargin"><ins>Comments</ins>: &nbsp; &nbsp; &nbsp; </label> 
-			<textarea required placeholder="(Review text)" name="comments" id="comments" rows="3" cols="30"></textarea>
-		</fieldset>
+			<div class="container" id="review">
+				<label for="comments"><ins>Comments</ins>: &nbsp; &nbsp; &nbsp; </label> 
+				<textarea required placeholder="(Review text)" name="comments" id="comments"></textarea>
+			</div> 
+			
 
+			
+			<br><br><br>
+		</fieldset>
+	</form> <br><br><br><br>
 	<script src="./script/sharedScr.js"></script>
 </body>
 </html>

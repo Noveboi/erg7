@@ -16,24 +16,69 @@ form{
 	margin: 0 auto;
 }
 
-form h1{
+form > h1{
 	text-align: center; 
 	background-color: #0d0d0d;
 }
 
-.padding{
-	padding: 50px;
+form > h1 > a{
+    color: white;
+    text-decoration: none;
 }
 
-fieldset > legend{
-	font-size: 25px;
+form > h1 > a:hover{
+	text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.padding{
+	padding: 50px;
+    margin-top: 9.8px;
+    margin-bottom: 24px;
+}
+
+fieldset{
+    font-size: 24.4px;
 }
 
 iframe{
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 43px;
+    margin-bottom: 30px;
+}
+
+textarea{
+    margin-top: 50px;
+    width: 40%;
+    height: 80px;
+}
+
+.margintop{
+    margin-top: 22px;
 }
 
 .slightmargin{
     margin-left: 30px;
+}
+
+#review{
+    align-items: center;
+    margin: -20px 0 0 28px;
+}
+
+*::placeholder{
+    color: rgb(148, 148, 148);
+}
+
+input{
+    background: rgb(27, 27, 27);
+    font-size: 20px;
+    border: 2px solid black;
+    color: rgb(235, 235, 235);
+}
+
+textarea{
+    background: rgb(31, 31, 31);
+    font-size: 20px;
+    border: 2px solid black;
+    color: rgb(235, 235, 235);
 }
