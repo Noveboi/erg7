@@ -1,5 +1,5 @@
 body{
-	background: #0f1408; /* CM Page exclusive*/
+	background: #0f1408;
 	font-size: 24px;
 }
 
@@ -11,7 +11,7 @@ body{
 	align-items: center;
 }
 
-.bigimg{ /* CM Page exclusive*/
+.bigimg{
 	border-radius: 20%;
 	border: 2px solid rgba(255, 0, 0, 0.6);
 	margin-top: 40px;
@@ -89,7 +89,7 @@ ul{
 	margin-bottom: 10px;
 }
 
-#hist{ /* CM Page exclusive*/
+#hist{
 	display: flex;
 }
 
@@ -145,11 +145,14 @@ td:nth-child(1) > img{
 	margin-left: 10px;
 }
 
+.pic{
+	align-items: center;
+}
+
 video{
 	border: 3px solid black;
 }
 
-/* Exclusive to CM Page */
 .albumholder{
 	justify-content: space-evenly;
 	width: 75%;
