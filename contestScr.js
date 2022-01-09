@@ -48,7 +48,7 @@ for(let i = 0; i <= it; i++) {
     }
     else if (i % 2 == 1 && iter < 2) {
         iter++;
-        tempArray.push(datasub); //Pushes birthyear
+        tempArray.push(Number(datasub)); //Pushes birthyear
         console.log(tempArray, iter, i);
     }
     else {
@@ -63,4 +63,17 @@ for(let i = 0; i <= it; i++) {
     }
 }
 
-//Data translation from PHP to JS over, time to 
+//Data translation from PHP to JS over, time to display this data!
+var winners = [];
+
+for(user of userArray) {
+    if(user[1] == 2003) {
+        winners.push(user[0]);
+    }
+}
+
+for(winner of winners) {
+    var winnerName = document.createElement('h2');
+    winnerName.innerHTML = winner;
+    document.getElementById('winners').appendChild(winnerName);
+}
