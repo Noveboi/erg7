@@ -126,7 +126,7 @@ th{
 }
 
 tr{
-	height: 60px;
+	height: 80px;
 }
 
 td{
@@ -250,5 +250,32 @@ div > em{
 	border-bottom: 1px solid #0b5974;
 	background-color: rgba(1,1,1,0.15);
 	color:#fd6a45; 
+}
+
+#btn1 {
+	border:3px solid black; 
+	font-size:26px; 
+	font-weight:bold; 
+	color:black; 
+	background:rgb(121, 121, 121);
+}
+
+#btn1:hover{
+	cursor: pointer;
+}
+
+.stars{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10vw;
+	height: 25px;
+}
+
+.stars > img {
+	width: 30px;
+	height: 28.25px;
+	filter: saturate(275%) drop-shadow(0 0 0.2rem rgba(251, 255, 0, 0.623));
+	margin: 0px 2px;
 }
 /* End Exclusive to CM Page */

@@ -94,3 +94,16 @@ textarea{
 	text-decoration: underline;
     text-decoration-style: dotted;
 }
+
+#btn2{
+    border:3px solid rgb(14, 14, 14); 
+    font-size:22px; 
+    font-weight:bold;
+    padding: 5px; 
+    color:rgb(228, 228, 228); 
+    background:rgba(173, 0, 0, 0.829);
+}
+
+#btn2:hover{
+    cursor:pointer;
+}
