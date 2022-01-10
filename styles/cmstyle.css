@@ -126,7 +126,7 @@ th{
 }
 
 tr{
-	height: 80px;
+	height: 100px;
 }
 
 td{
@@ -267,14 +267,24 @@ div > em{
 .stars{
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	width: 10vw;
+	justify-content: space-around;
+	width: fit-content;
 	height: 25px;
+	margin-top: 10px;
 }
 
-.stars > img {
+.stars > div > img {
 	width: 35px;
-	height: 32.5px;
+	height: 35px;
 	filter: saturate(275%) drop-shadow(0 0 0.2rem rgba(251, 255, 0, 0.6));
+}
+
+.crop
+ {
+	width: 35px;
+	height: min-content;
+	overflow: hidden;
+	object-position: left;
+	margin: 0 4px;
 }
 /* End Exclusive to CM Page */

@@ -1,3 +1,11 @@
+//Refresh once on page load for AJAX to work properly
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
+
 //Functionability for audio snippets
 const belowBox = document.getElementById('below');
 const forcedBox = document.getElementById('forced');
@@ -113,14 +121,35 @@ if (belowBox && forcedBox && rewindBox) {
 } else console.log("Elements are null!");
 
 function createStars (stars, domTarget) {
-    for(let i = 0; i < stars; i++) {
+    var obj = document.getElementById(domTarget);
+    for(i = 0; i < stars; i++) {
+        starCropContainer = document.createElement('div');
         star = document.createElement('img');
         star.src = './img/ystar.png';
         star.alt = "*";
-        document.getElementById(domTarget).append(star);
+        obj.append(starCropContainer);
+        starCropContainer.append(star);
+
+        //Add unique class name to each star of each album
+        names = obj.id + "_crop_" + Number(i+1);
+        starCropContainer.id = names;
+        starCropContainer.classList.add("crop");
+    }
+
+    if(!Number.isInteger(stars)) {
+        //Select highest sta
+        query = obj.id + "_crop_" + i;
+        
+        //Decide the crop amount
+        widthPerc = ((stars * 10) % 10) /10;
+        console.log(widthPerc);
+
+        //Get cropping...
+        document.getElementById(query).style.width = (35 * widthPerc) + "px";
     }
 }
 
-createStars(4, 'l1')
-createStars(4, 'l2')
+
+createStars(3.7, 'l1')
+createStars(4.5, 'l2')
 createStars(5, 'l3')

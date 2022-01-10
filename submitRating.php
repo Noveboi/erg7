@@ -26,7 +26,7 @@ $birthyear = $_POST['birthyear'];
 
 //SQL Queries
 $sql = "INSERT INTO reviews (disc_name, reldate, uname, reviewtext, rating, birthyear) VALUES
-		('$discname', '$reldate', '$uname', '$reviewtext', '$rating', '$birthyear')";
+		('$discName', '$reldate', '$uname', \"$reviewtext\", $rating, $birthyear)";
 
 if($conn->query($sql) === TRUE)
 {

@@ -17,7 +17,6 @@ function Split() {
 		lepTxt.style.display = 'block';
 		bandsTxt.style.display = 'none';
 
-		console.log("split called");
 		select.addEventListener("mouseleave", function () {
 			bandsTxt.style.display = 'block';
 			cmTxt.style.display = 'none';

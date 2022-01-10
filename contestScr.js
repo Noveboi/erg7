@@ -1,4 +1,10 @@
-//Get localStorage items from submitRating.php and create table
+//Refresh once on page load for AJAX to work properly
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
 
 //Send a GET HTTP Request to getData.php and store the PHP array in phpData var.
 var xhr = new XMLHttpRequest();
