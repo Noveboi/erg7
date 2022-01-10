@@ -1,0 +1,194 @@
+body{
+    font-size: 24.5px;
+    background-image: url('../rating/cmbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 130%;
+    background-position: left;
+}
+
+form{
+    padding: 30px 36px;
+	color: white;
+    background-color: rgba(0, 0, 0, .8);
+	border: 3px solid black;
+    width: 650pt;
+	margin: 0 auto;
+}
+
+form > h1{
+	text-align: center; 
+	background-color: #0d0d0d;
+}
+
+form > h1 > a{
+    color: white;
+    text-decoration: none;
+}
+
+form > h1 > a:hover{
+	text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.padding{
+	padding: 46px;
+    margin-top: 9.8px;
+    margin-bottom: 24px;
+}
+
+fieldset{
+    font-size: 24.4px;
+}
+
+iframe{
+    margin-top: 43px;
+    margin-bottom: 30px;
+}
+
+textarea{
+    margin-top: 50px;
+    width: 40%;
+    height: 80px;
+}
+
+.margintop{
+    margin-top: 22px;
+}
+
+.slightmargin{
+    margin-left: 30px;
+}
+
+#rev{
+    align-items: center;
+    margin: -20px 0 0 28px;
+}
+
+*::placeholder{
+    color: rgb(148, 148, 148);
+}
+
+input{
+    background: rgb(27, 27, 27);
+    font-size: 20px;
+    border: 2px solid black;
+    color: rgb(235, 235, 235);
+    padding: 5px;
+}
+
+textarea{
+    background: rgb(31, 31, 31);
+    font-size: 20px;
+    border: 2px solid black;
+    color: rgb(235, 235, 235);
+    padding: 5px;
+}
+
+#anchorr{
+    color: rgb(5, 50, 197);
+    background-color: rgb(14, 14, 14);
+    filter: drop-shadow(0 0 0.2rem rgba(218, 153, 32, 0.219));
+    text-decoration: none;
+}
+
+#anchorr:hover{
+	text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+#btn2{
+    border:3px solid rgb(14, 14, 14); 
+    font-size:22px; 
+    font-weight:bold;
+    padding: 5px; 
+    color:rgb(228, 228, 228); 
+    background:rgba(173, 0, 0, 0.829);
+}
+
+#btn2:hover{
+    cursor:pointer;
+}
+
+.stars{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10vw;
+	height: 25px;
+}
+
+.stars > img {
+	width: 35px;
+	height: 32.5px;
+    filter: saturate(50%) brightness(50%);
+}
+
+#rating {
+    padding: 3px;
+}
+
+@keyframes shine {
+    0% {filter: saturate(275%) drop-shadow(0 0 0.2rem rgba(251, 255, 0, 0.6));}
+    50% {filter: saturate(275%) drop-shadow(0 0 0.4rem rgba(251, 255, 0, 1));}
+    100% {filter: saturate(275%) drop-shadow(0 0 0.2rem rgba(251, 255, 0, 0.6));}
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    align-self: center;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(85, 30, 30);
+    border: 2px solid black;
+}
+
+.checkbox:hover input ~ #checkmark{
+    background-color: rgb(104, 33, 33);
+}
+
+.checkbox input:checked ~ #checkmark {
+    background-color: rgb(156, 27, 27);
+}
+
+#checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked ~ #checkmark::after{
+    display: block;
+    left: 17px;
+    top: 6px;
+    width: 10px;
+    height: 23px;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    animation: turnCheckmark 0.8s ease-out forwards;
+}
+  
+@keyframes turnCheckmark {
+    0% { transform: rotate(70deg); }
+    40% { transform: rotate(55deg);}
+    100% { transform: rotate(45deg);}
+}

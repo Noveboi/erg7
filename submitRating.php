@@ -28,15 +28,13 @@ $birthyear = $_POST['birthyear'];
 $sql = "INSERT INTO reviews (disc_name, reldate, uname, reviewtext, rating, birthyear) VALUES
 		('$discname', '$reldate', '$uname', '$reviewtext', '$rating', '$birthyear')";
 
-$getdata = "SELECT uname, birthyear FROM reviews";
-
 if($conn->query($sql) === TRUE)
 {
 	echo "Review row created succesfully"; 
+	header("Location: contest.html");
+	exit();	
 } else{
 	echo $conn->error;
 }
 
-header("Location: contest.html");
-exit();
 ?>

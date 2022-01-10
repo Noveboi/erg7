@@ -1,0 +1,7 @@
+<label for="disc" class="slightmargin"><ins>Album Name</ins>: &nbsp; </label>
+			<input required placeholder="CITY MORGUE VOLUME 3: ______ __ ___ ______" type="text" name="disc" id="disc" size="42" maxlength="42" style="width:490px;"> <br>
+
+			<div class="margintop">
+				<label for="reldate" class="slightmargin"><ins>Release Date</ins>: &nbsp; </label> 
+				<input required name="reldate" type="date" id="reldate"> 
+			</div>
