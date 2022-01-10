@@ -30,7 +30,6 @@ data = data.replace('"', "");
 
 var datasub = data;
 var commaindex = 0;
-console.log(data);
 var iter = 0;
 
 var userArray = [];
@@ -50,12 +49,10 @@ for(let i = 0; i <= it; i++) {
     if(i % 2 == 0 && iter < 2) {
         iter++;
         tempArray.push(datasub); //Pushes username
-        console.log(tempArray, iter, i)
     }
     else if (i % 2 == 1 && iter < 2) {
         iter++;
         tempArray.push(Number(datasub)); //Pushes birthyear
-        console.log(tempArray, iter, i);
     }
     else {
         iter = 0;
@@ -65,7 +62,6 @@ for(let i = 0; i <= it; i++) {
         tempArray.pop();
         tempArray.push(datasub); //Pushes username
         iter++;
-        console.log("reset");
     }
 }
 

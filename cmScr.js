@@ -36,9 +36,9 @@ function createStars (stars, domTarget) {
 }
 
 //For cmpage.hmtl
-createStars(4, 'a1');
+createStars(3.5, 'a1');
 createStars(4, 'a2');
-createStars(5, 'a3');
+createStars(4.5, 'a3');
 
 //Get average star rating from getStarRating.php
 var xhr = new XMLHttpRequest;

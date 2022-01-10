@@ -150,6 +150,6 @@ function createStars (stars, domTarget) {
 }
 
 
-createStars(3.7, 'l1')
-createStars(4.5, 'l2')
-createStars(5, 'l3')
+createStars(3.8, 'l1')
+createStars(4.3, 'l2')
+createStars(4.5, 'l3')

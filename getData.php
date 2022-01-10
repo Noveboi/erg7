@@ -13,7 +13,7 @@ if($conn->connect_error)
 	die("Connection failed: " . $conn->connect_error);
 }
 
-$getdata = "SELECT uname, birthyear FROM reviews";
+$getdata = "SELECT uname, birthyear FROM reviews WHERE LOWER(disc_name) LIKE '%vol._3__bottom of the barrel%'";
 
 $result = $conn->query($getdata);
 
