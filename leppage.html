@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="./styles/generalstyle.css">
 	<link rel="stylesheet" href="./styles/cmstyle.css">
 	<link rel="stylesheet" href="./styles/lepstyle.css">
+	<script defer src="./script/sharedScr.js"></script>
+	<script defer src="./script/leppageScr.js"></script>
+	<link rel="icon" type="image/x-icon" href="./img/favicon.png">
 </head>
 <body scroll="no">
 	<!-- Shared Navbar -->
@@ -31,36 +34,45 @@
 	<div id="section-a" class="container flexcolumn">
 		<!-- General Info -->
 		<div id="description">
-			<p style="margin : 40px 0 0 40px;"><span class="hugeletter">L</span> <span class="bigify">eprous</span> is a Norwegian progressive metal/rock band consisting of
-			members (left to right):</p>
-			<p>- Tor Oddmund Suhrke (Guitars, Backing Vocals)</p>
-			<p>- Robin Ognedal (Guitars, Backing Vocals)</p>
-			<p>- Einar Solberg (Vocals, Keyboards)</p>
-			<p>- Simen Børven (Bass, Backing Vocals) </p>
-			<p>- Baard Kolstad (Drums)</p>
-			<p style="margin : 60px 0 0 40px;"><span class="hugeletter">T</span>he band's style and sound is considered unique for its peculiar harmonies and rhythms, grand vocal range, 
-				and blending of different genres.</p>
-			<p style="margin-top: 40px; color: rgb(255, 243, 172);">Here are some audio snippets showcasing Leprous. 
-				(Click album icons to listen, scroll to adjust volume)</p>
+			<div id="spc">
+				<p style="margin : 40px 0 0 40px;"><span class="hugeletter">L</span> <span class="bigify">eprous</span> is a Norwegian progressive metal/rock band consisting of
+				members (left to right):</p>
+				<p>- Tor Oddmund Suhrke (Guitars, Backing Vocals)</p>
+				<p>- Robin Ognedal (Guitars, Backing Vocals)</p>
+				<p>- Einar Solberg (Vocals, Keyboards)</p>
+				<p>- Simen Børven (Bass, Backing Vocals) </p>
+				<p>- Baard Kolstad (Drums)</p>
+				<p style="margin : 60px 0 0 40px;"><span class="hugeletter">T</span>he band's style and sound is considered unique for its peculiar harmonies and rhythms, grand vocal range, 
+					and blending of different genres.</p>
+				<p style="margin-top: 40px; color: rgb(255, 243, 172);">Here are some audio snippets from three separate albums
+					 showcasing Leprous. (Click album icons to listen, scroll to adjust volume)</p>
+			</div>
 		</div>
 
 		<!-- Audio Snippets -->
 		<div id="audio-snippets" class="container flexspace tbmargin">
-			<div class="snippet container" >
-				<img src="./img/pitfalls.jpg" id="below" alt="Pitfalls Album Art">
-				<h1>Below</h1>
+			<div class="container flexalign flexcolumn">
+				<div class="snippet container" >
+					<img src="./img/pitfalls.jpg" id="below" alt="Pitfalls Album Art">
+					<h1>Below</h1>
+				</div>
+				<div class="stars" id="l1"></div>
 			</div>
-			<div class="snippet container" >
-				<img src="./img/bilateral.jpg" id="forced" alt="Bilateral Album Art">
-				<h1>Forced Entry</h1>
+			<div class="container flexalign flexcolumn">
+				<div class="snippet container" >
+					<img src="./img/bilateral.jpg" id="forced" alt="Bilateral Album Art">
+					<h1>Forced Entry</h1>
+				</div>
+				<div class="stars" id="l2"></div>
 			</div>
-			<div class="snippet container" >
-				<img src="./img/congregation.jpg" id="rewind" alt="congregation Album Art">
-				<h1>Within My Fence</h1>
+			<div class="container flexalign flexcolumn">
+				<div class="snippet container" >
+					<img src="./img/congregation.jpg" id="rewind" alt="congregation Album Art">
+					<h1>Within My Fence</h1>
+				</div>
+				<div class="stars" id="l3"></div>
 			</div>
 		</div>
 	</div>
-	<script src="./script/sharedScr.js"></script>
-	<script src="./script/leppageScr.js"></script>
 </body>
 </html>

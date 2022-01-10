@@ -12,8 +12,6 @@ belowAudio = new Audio("../audio/below.mp3");
 rewindAudio = new Audio("../audio/fence.mp3");
 forcedAudio = new Audio("../forced_entry.mp3");
 
-console.log(belowAudio, rewindAudio);
-
 let audioIsPlaying = false;
 let vol = 1.0;
 let currentlyPlaying = 0; // 0 - nothing | 1 - below | 2 - within my fence | 3 - forced entry
@@ -113,3 +111,16 @@ if (belowBox && forcedBox && rewindBox) {
 	});
 
 } else console.log("Elements are null!");
+
+function createStars (stars, domTarget) {
+    for(let i = 0; i < stars; i++) {
+        star = document.createElement('img');
+        star.src = './img/ystar.png';
+        star.alt = "*";
+        document.getElementById(domTarget).append(star);
+    }
+}
+
+createStars(4, 'l1')
+createStars(4, 'l2')
+createStars(5, 'l3')
